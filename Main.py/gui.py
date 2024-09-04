@@ -2,12 +2,12 @@ import functions
 import FreeSimpleGUI as sg
 
 label = sg.Text("Type in a to-do:")
-input_box =sg.InputText(tooltip="Enter a todo", key="todo")
+input_box = sg.InputText(tooltip="Enter a todo", key="todo")
 add_button = sg.Button("Add")
 
 window = sg.Window('My To-do App',
                    layout=[[label], [input_box, add_button]],
-                   font=('Hevetica', 10))
+                   font=('Helvetica', 15))
 while True:
     event, values = window.read()
     print(event)
